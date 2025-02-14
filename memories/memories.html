@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Album</title>
+    <link rel="stylesheet" href="memories.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Katelynn <3</div>
+        <ul class="nav-links">
+          <li>
+            <a href="https://valentinesgifts.github.io/Katelynn/">Home</a>
+          </li>
+          <li>
+            <a
+              href="https://valentinesgifts.github.io/Katelynn/compliments/compliment.html"
+              >Pick me up</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="album-container">
+      <div class="album-box" onclick="openAlbum('colouring')">
+        <div class="blur-overlay"></div>
+        <div class="album-info">
+          <h2>Colouring Date</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal for the Gallery -->
+    <div id="galleryModal" class="modal">
+      <span class="close" onclick="closeAlbum()">&times;</span>
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="Gallery Image" />
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+      </div>
+    </div>
+
+    <script src="memories.js"></script>
+  </body>
+</html>
